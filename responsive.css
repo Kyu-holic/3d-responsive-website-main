@@ -1,2 +1,19 @@
-/* 모바일 전환할 때 사용할 css파일 */
-
+/* 모바일 전환할 때 사용할 css파일 미디어쿼리*/
+@midea (max-width: 768px) {
+  /* Entire Layout */
+  .cd-section {
+    /* 모바일에서는 height:auto로 잡아야 내용에 따라서 크기가 변형 */
+    height: auto;
+  }
+  .cd-section > div {
+    height: 100%;
+  }
+  .content {
+    position: static;
+    width: 100%;
+    height: 100%;
+    left: 20px;
+    bottom: 20px;
+    overflow: visible;
+  }
+}
