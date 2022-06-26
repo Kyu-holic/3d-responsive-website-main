@@ -82,3 +82,47 @@ header {
   font-size: 16px;
   font-style: italic;
 }
+
+/* ################### Section : awards winner ################# */
+
+.awards-inner {
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.awards-inner > div {
+  /* border: 1px solid #000; */
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.about-awards{
+  background-color: #1a1f24;
+  color: #fff;
+}
+
+.about-heading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+}
+
+.victory-jump{
+  background-color: #fff;
+}
+
+.victory-jump img {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+
+
+ 

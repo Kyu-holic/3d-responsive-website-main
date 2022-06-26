@@ -1,6 +1,17 @@
   position absolute, fixed가 들어가면 모든 요소는 inline-block으로 변경되기 때문에 너비값을 줘야한다
 
+  ; pc 끝나고 모바일 하기
   media query를 해줄 때는 기존 pc버전의 css 값들이 그대로 상속되므로
   값을 단순히 지워주는게 아니라 속성값을 새로 넣어줘야한다.
   ex) overflow:hidden; -> overflow:visible;
       position:absolute; -> position:static;
+
+  ; pc 버전
+  1. Home Section(7)
+  2. About Section(2)
+  3. Project Section(6)
+  4. Plan Section(5)
+  5. Awards Section(1)
+  6. Location Section(3)
+  7. Contact Section(4)
+
