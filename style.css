@@ -83,7 +83,65 @@ header {
   font-style: italic;
 }
 
-/* ################### Section : awards winner ################# */
+/* ################### Section : about ################# */
+
+.about-inner {
+  background: #0dace3 url(images/line-drawing.png) no-repeat right bottom;
+  height: 100%;
+}
+
+.about-items {
+  /* border: 1px solid red; */
+  width: 60%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 100px;
+}
+
+.item {
+  /* 자식요소인 img태그에 float 들어갔을 때 부모요소인 .item 태그가 높이값을 잃거나
+밑에 요소가 땡겨져 들어오기 때문에 이를 막아주기 위해 overflow:hidden 사용 */
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.item:hover h3 {
+  color: #000;
+  letter-spacing: 2px;
+}
+
+.item:hover img {
+  filter: invert(0);
+}
+
+.item img {
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+  filter: invert();
+  transition: 0.5s;
+}
+
+.item h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  transition: 0.5s;
+  letter-spacing: -1px;
+}
+
+.item span {
+}
+
+.item p {
+  /* 위에서 float:left를 줬기 때문에 이미지 크기를 넘어가면 글씨가 이미지 밑으로 들어감.about-awards이를 막아주기 위해 overflow:hidden 사용 */
+  overflow: hidden;
+  font-size: 18px;
+}
+
+/* ################### Section : awards ################# */
 
 .awards-inner {
   height: 100%;
