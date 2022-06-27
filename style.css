@@ -214,3 +214,41 @@ hr.bar {
   color: #fff;
   border-color: transparent;
 }
+
+/* ################### Section : Location ################# */
+.location-inner {
+  background: url(images/background-location.jpg) no-repeat center center;
+  height: 100%;
+}
+
+.location-inner:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.85);
+  /* display: inline-block; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.feature {
+  /* border: 1px solid red; */
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #bbb;
+}
+
+.feature > div {
+  /* border: 1px solid blue; */
+  float: left;
+}
+
+.office {
+  width: 60%;
+}
+
+.service {
+  width: 40%;
+}
