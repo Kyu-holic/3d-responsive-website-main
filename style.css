@@ -232,12 +232,13 @@ hr.bar {
 
 .feature {
   /* border: 1px solid red; */
-  width: 70%;
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #bbb;
+  padding-top: 80px;
 }
 
 .feature > div {
@@ -247,8 +248,48 @@ hr.bar {
 
 .office {
   width: 60%;
+  padding-right: 100px;
 }
 
 .service {
   width: 40%;
+}
+
+.office b {
+  font-weight: normal;
+}
+
+.office h2 {
+  color: #1db1f0;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.office p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.office span {
+  color: #fff;
+}
+
+.customer {
+  margin-top: 60px;
+}
+
+.service-item {
+  margin-bottom: 70px;
+}
+
+.service-item .fa {
+  color: #1db1f0;
+  font-size: 40px;
+}
+
+.service-item h3 {
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
 }
