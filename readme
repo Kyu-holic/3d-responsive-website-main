@@ -1,4 +1,4 @@
-  position absolute, fixed가 들어가면 모든 요소는 inline-block으로 변경되기 때문에 너비값을 줘야한다
+1.  position absolute, fixed가 들어가면 모든 요소는 inline-block으로 변경되기 때문에 너비값을 줘야한다
 
   ; pc 끝나고 모바일 하기
   media query를 해줄 때는 기존 pc버전의 css 값들이 그대로 상속되므로
@@ -15,3 +15,5 @@
   6. Location Section(3)
   7. Contact Section(4)
 
+2. hr.bar를 디자인할 때 boder: none을 주는 이유는 hr은 그냥 라인이 아니라
+상하좌우 border를 갖고 있는 속성이기 때문에 보더를 없애기 위해 사용
