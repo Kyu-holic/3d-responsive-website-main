@@ -23,3 +23,9 @@ awards 섹션에서 여러가지 태그를 묶기위해 .about-heading 클래스
 이미지의 색상을 변경시키기 위해 filter 속성을 사용하는데
 filter속성 중 invert는 색상을 반전시키는 것.
 invert()의 괄호 안에는 1, 100%, 빈괄호 모두 1을 뜻한다.
+
+ul의 liststyle을 none으로 줘도 기존에 있던 패딩이 잡혀있기 때문에
+padding 0 로 초기화해줘야 한다
+
+input textarea button 태그는 inline-block이기 때문에 상하좌우 크기 가질 수 있다.
+
