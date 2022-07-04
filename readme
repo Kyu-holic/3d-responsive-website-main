@@ -29,3 +29,6 @@ padding 0 로 초기화해줘야 한다
 
 input textarea button 태그는 inline-block이기 때문에 상하좌우 크기 가질 수 있다.
 
+slick-slider를 없애려고 할 때 display:none을 하면 안 사라지는데 그 이유는 우선 순위 때문.
+없애려면 !important를 하여 없애면 된다. 
+근데 그렇게만 하면 모든 slick.js가 사라지므로 앞에 부모 선택자를 줄 것.

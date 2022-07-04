@@ -176,7 +176,8 @@ header {
   padding-right: 50px;
 }
 
-.plan-heading h2 {
+.plan-heading h2,
+.history-info h2 {
   color: #fff;
   margin: 0;
 }
@@ -198,7 +199,6 @@ header {
   background-color: dodgerblue;
   /* 밑에 있는 hr.bar의 margin이 auto로 되어 있기 때문에 크기값을 가질 수 있게 display inline block을 해준다. */
   display: inline-block;
-  margin: 20px 0;
 }
 
 .history-info {
@@ -208,11 +208,41 @@ header {
   background-color: dodgerblue;
   /* 밑에 있는 hr.bar의 margin이 auto로 되어 있기 때문에 크기값을 가질 수 있게 display inline block을 해준다. */
   display: inline-block;
-  margin: 0 ;
 }
 
-.history-slider{
-border: 1px solid red;
+.history-slider {
+  /* border: 1px solid red; */
+}
+
+.history-slider div h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  /* line-height: 1.5em; */
+}
+
+.history-slider div h4 span {
+  color: dodgerblue;
+}
+
+.history-slider div p {
+  font-size: 14px;
+  /* line-height: 1.5em; */
+}
+
+/* Slick.js Custom CSS */
+.history-slider .slick-arrow {
+  display: none !important;
+}
+
+.history-slider .slick-dots li {
+margin: 0;
+}
+
+.history-slider .slick-dots li button:before{
+  color:#fff;
+  font-size: 20px;
 }
 
 /* ################### Section : awards ################# */
