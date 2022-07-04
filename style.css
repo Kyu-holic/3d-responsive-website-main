@@ -198,9 +198,21 @@ header {
   background-color: dodgerblue;
   /* 밑에 있는 hr.bar의 margin이 auto로 되어 있기 때문에 크기값을 가질 수 있게 display inline block을 해준다. */
   display: inline-block;
+  margin: 20px 0;
 }
 
 .history-info {
+}
+
+.history-info hr.bar {
+  background-color: dodgerblue;
+  /* 밑에 있는 hr.bar의 margin이 auto로 되어 있기 때문에 크기값을 가질 수 있게 display inline block을 해준다. */
+  display: inline-block;
+  margin: 0 ;
+}
+
+.history-slider{
+border: 1px solid red;
 }
 
 /* ################### Section : awards ################# */
