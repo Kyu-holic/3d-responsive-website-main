@@ -5,19 +5,79 @@
     <title>Prototype</title>
   </head>
   <style>
+    body {
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* ################### Section : Project ################# */
+
+    * {
+      box-sizing: border-box;
+    }
     .project-inner {
+      height: 100%;
+      /* border: 1px solid #000; */
     }
     .tabs {
+      border: 5px solid red;
+      height: 100%;
+      width: 300%;
+      transition: 0.5s;
     }
     .tab {
+      height: 100%;
+      border: 5px solid yellow;
+      float: left;
+      width: 33.3333%;
+    }
+    .tab > div {
+      border: 5px solid blue;
+      height: 100%;
+      float: left;
     }
     .project-info {
+      width: 25%;
     }
     .project-photo {
+      width: 75%;
+    }
+    input[name="tabmenu"] {
+      display: none;
+    }
+    .btn {
+      border: 2px solid #000;
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+    }
+    .btn label {
+      cursor: pointer;
+    }
+    input[id="tab1"]:checked ~ .btn label[for="tab1"] {
+      color: red;
+    }
+    input[id="tab2"]:checked ~ .btn label[for="tab2"] {
+      color: red;
+    }
+    input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+      color: red;
+    }
+    input[id="tab1"]:checked ~ .tabs {
+      margin-left: 0;
+    }
+    input[id="tab2"]:checked ~ .tabs {
+      margin-left: -100%;
+    }
+    input[id="tab3"]:checked ~ .tabs {
+      margin-left: -200%;
     }
   </style>
   <body>
     <div class="project-inner">
+      <input type="radio" name="tabmenu" id="tab1" checked />
+      <input type="radio" name="tabmenu" id="tab2" />
+      <input type="radio" name="tabmenu" id="tab3" />
       <div class="tabs">
         <div class="tab">
           <div class="project-info">project-info1</div>
@@ -31,6 +91,11 @@
           <div class="project-info">project-info3</div>
           <div class="project-photo">project-photo3</div>
         </div>
+      </div>
+      <div class="btn">
+        <label for="tab1">tab1</label>
+        <label for="tab2">tab2</label>
+        <label for="tab3">tab3</label>
       </div>
     </div>
   </body>
