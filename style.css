@@ -142,6 +142,96 @@ header {
   font-size: 18px;
 }
 
+/* ################### Section : Project ################# */
+
+* {
+  box-sizing: border-box;
+}
+.project-inner {
+  height: 100%;
+  /* border: 1px solid #000; */
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.tabs {
+  /* border: 5px solid red; */
+  height: 100%;
+  width: 300%;
+  transition: 0.5s;
+}
+.tab {
+  height: 100%;
+  /* border: 5px solid yellow; */
+  float: left;
+  width: 33.3333%;
+}
+.tab > div {
+  /* border: 5px solid blue; */
+  height: 100%;
+  float: left;
+}
+.project-info {
+  width: 25%;
+}
+.project-photo {
+  width: 75%;
+  overflow: hidden;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.btn {
+  /* border: 2px solid #000; */
+  position: absolute;
+  bottom: 30px;
+  width: 25%;
+  text-align: center;
+}
+.btn label {
+  cursor: pointer;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 8px;
+  position: relative;
+}
+
+.btn label:before {
+  content: "";
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  transition: 0.3s;
+}
+
+.btn label:hover:before {
+  border: 1px solid #aaa;
+}
+
+input[id="tab1"]:checked ~ .btn label[for="tab1"]:before,
+input[id="tab2"]:checked ~ .btn label[for="tab2"]:before,
+input[id="tab3"]:checked ~ .btn label[for="tab3"]:before {
+  border: 1px solid #aaa;
+}
+
+input[id="tab1"]:checked ~ .tabs {
+  margin-left: 0;
+}
+input[id="tab2"]:checked ~ .tabs {
+  margin-left: -100%;
+}
+input[id="tab3"]:checked ~ .tabs {
+  margin-left: -200%;
+}
+
 /* ################### Section : Plan ################# */
 .plan-inner {
   background-color: #1d1b24;
@@ -237,11 +327,11 @@ header {
 }
 
 .history-slider .slick-dots li {
-margin: 0;
+  margin: 0;
 }
 
-.history-slider .slick-dots li button:before{
-  color:#fff;
+.history-slider .slick-dots li button:before {
+  color: #fff;
   font-size: 20px;
 }
 
