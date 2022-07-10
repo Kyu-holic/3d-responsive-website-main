@@ -232,6 +232,46 @@ input[id="tab3"]:checked ~ .tabs {
   margin-left: -200%;
 }
 
+/* Project info */
+.project-info {
+  padding: 25px;
+}
+.project-info h3 {
+  font-size: 20px;
+}
+.project-info p {
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.project-info ul {
+  line-height: 2em;
+  margin: 30px 0;
+}
+.project-info ul li::before {
+  content: "\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+.detail {
+  /* border: 1px solid #000; */
+}
+.detail div {
+  display: inline-block;
+  text-align: center;
+  width: 32.3333%;
+  font-size: 13px;
+  color: #999;
+}
+.detail div span {
+  font-size: 36px;
+  font-weight: bold;
+  display: block;
+  color: #000;
+  margin-bottom: 1px;
+}
+.view-project {
+}
+
 /* ################### Section : Plan ################# */
 .plan-inner {
   background-color: #1d1b24;
