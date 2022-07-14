@@ -800,3 +800,24 @@ hr.bar {
 .contact-info ul li:nth-child(3) {
   color: #0088cc;
 }
+
+/* ################# SubPage : Hiring ############# */
+.modal {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.header {
+  /* border: 1px solid #000; */
+  position: fixed;
+  width: 100%;
+}
+.header-inner {
+  /* border: 1px solid red; */
+  width: 95%;
+  margin: auto;
+  height: 90px;
+  line-height: 90px;
+  border-bottom: 1px solid #ddd;
+}
+.modal-display {
+  font-size: 18px;
+}
