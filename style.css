@@ -870,7 +870,9 @@ hr.bar {
 
 .hiring-info {
   overflow: hidden;
+  margin-bottom: 30px;
 }
+
 .hiring-info > div {
   /* border: 1px solid #000; */
   float: left;
@@ -892,8 +894,9 @@ hr.bar {
   font-weight: normal;
 }
 .center-child p {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 300;
+  line-height: 1.5em;
 }
 .photo img {
   width: 100%;
@@ -934,5 +937,59 @@ hr.bar {
   font-weight: 400;
 }
 .hiring-contact ul li:last-child {
-  color:dodgerblue
+  color: dodgerblue;
+}
+
+.sns {
+}
+.sns a {
+  font-size: 15px;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin: 2px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.sns a:before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: 0.5s;
+}
+
+.sns a:hover {
+  color: #fff;
+}
+.sns a:hover:before {
+  transform: translateX(-50%) scale(1);
+}
+
+.sns a:nth-child(1):before {
+  background-color: #1877f2;
+}
+.sns a:nth-child(2):before {
+  background-color: #1da1f2;
+}
+.sns a:nth-child(3):before {
+  background-color: #0a66c2;
+}
+.sns a:nth-child(4):before {
+  background-color: #e4405f;
+}
+.sns a:nth-child(5):before {
+  background-color: #cd201f;
+}
+.sns a:nth-child(6):before {
+  background-color: #00c300;
 }

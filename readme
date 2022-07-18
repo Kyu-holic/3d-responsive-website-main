@@ -32,3 +32,5 @@ input textarea button 태그는 inline-block이기 때문에 상하좌우 크기
 slick-slider를 없애려고 할 때 display:none을 하면 안 사라지는데 그 이유는 우선 순위 때문.
 없애려면 !important를 하여 없애면 된다. 
 근데 그렇게만 하면 모든 slick.js가 사라지므로 앞에 부모 선택자를 줄 것.
+
+transform속성을 여러개 사용할 때는 여러줄에 나눠서 사용하지 않고 한 줄에 사용할 것.
