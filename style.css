@@ -993,3 +993,48 @@ hr.bar {
 .sns a:nth-child(6):before {
   background-color: #00c300;
 }
+
+/* ############# SubPage : Hiring #################### */
+.hiring-main.project-main {
+  background: url(images/project-modal-main-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hiring-main.project-main .hiring-heading {
+  color: #fff;
+  width: 100%;
+  animation: slidedown 1s linear both;
+}
+
+.hiring-main.project-main .hiring-heading h1 {
+  font-size: 70px;
+}
+
+.hiring-heading.project-heading span:before,
+.hiring-heading.project-heading span:after {
+  content: "";
+  height: 2px;
+  background-color: #fff;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+}
+.hiring-heading.project-heading span:before {
+  right: 120%;
+}
+
+.hiring-heading.project-heading span:after {
+  left: 120%;
+}
+
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
