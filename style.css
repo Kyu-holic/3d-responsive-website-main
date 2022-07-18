@@ -995,19 +995,33 @@ hr.bar {
 }
 
 /* ############# SubPage : Hiring #################### */
-.hiring-main.project-main {
+.hiring-main.project-main1 {
   background: url(images/project-modal-main-01.jpg) no-repeat center center;
+}
+.hiring-main.project-main2 {
+  background: url(images/project-modal-main-02.jpg) no-repeat center center;
+}
+.hiring-main.project-main3 {
+  background: url(images/project-modal-main-03.jpg) no-repeat center center;
+}
+.hiring-main.project-main1,
+.hiring-main.project-main2,
+.hiring-main.project-main3 {
   background-size: cover;
   height: 100vh;
 }
 
-.hiring-main.project-main .hiring-heading {
+.hiring-main.project-main1 .hiring-heading,
+.hiring-main.project-main2 .hiring-heading,
+.hiring-main.project-main3 .hiring-heading {
   color: #fff;
   width: 100%;
   animation: slidedown 1s linear both;
 }
 
-.hiring-main.project-main .hiring-heading h1 {
+.hiring-main.project-main1 .hiring-heading,
+.hiring-main.project-main2 .hiring-heading,
+.hiring-main.project-main3 .hiring-heading {
   font-size: 70px;
 }
 
@@ -1026,6 +1040,19 @@ hr.bar {
 
 .hiring-heading.project-heading span:after {
   left: 120%;
+}
+
+.project-detail .hiring-info {
+  margin-bottom: 0;
+}
+
+.project-detail .hiring-slogan p:before {
+  left: -100px;
+}
+
+.photo.project-info {
+  font-size: 20px;
+  padding-top: 150px;
 }
 
 @keyframes slidedown {
