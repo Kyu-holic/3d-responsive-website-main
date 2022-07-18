@@ -893,6 +893,7 @@ hr.bar {
 }
 .center-child p {
   font-size: 20px;
+  font-weight: 300;
 }
 .photo img {
   width: 100%;
@@ -920,4 +921,18 @@ hr.bar {
   transform: rotate(180deg);
   top: -82px;
   left: -29px;
+}
+
+.hiring-contact ul {
+  display: inline-block;
+  width: 49%;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.hiring-contact ul li:first-child {
+  font-weight: 400;
+}
+.hiring-contact ul li:last-child {
+  color:dodgerblue
 }
